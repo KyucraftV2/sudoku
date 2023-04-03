@@ -2,6 +2,10 @@ package pattern;
 
 public class SudokuView implements SudokuObserver{
 
+    public SudokuView(SudokuModel m) {
+        m.addObserver(this);
+    }
+
     @Override
     public void update(int row, int col, int value, SudokuModel model) {
         System.out.println("Cell at row " + row + ", column " + col + " updated to " + value);
