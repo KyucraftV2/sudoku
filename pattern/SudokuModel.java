@@ -78,7 +78,6 @@ public class SudokuModel {
 
 
     public int getBlockSize() {
-
         return (int) Math.sqrt(board[0].length);
     }
 
