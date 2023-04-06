@@ -104,7 +104,7 @@ public class SudokuModel {
 
     public void notifySu(int row, int col, int value){
         for(SudokuObserver o : listeObserver){
-            o.update(row,col,value,this);
+            o.update(row,col,value);
         }
     }
 }

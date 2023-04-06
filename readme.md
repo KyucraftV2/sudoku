@@ -37,3 +37,9 @@ Pour séparer la classe Sudoku en une entité vue et une entité modèle, on peu
 
 ### Question 2
 Pour utiliser le pattern Observateur dans ce contexte, nous allons créer une interface Observer qui définira une méthode update que chaque vue du Sudoku implémentera. Ensuite, nous allons ajouter une méthode addObserver à la classe Sudoku pour que chaque vue puisse s'inscrire en tant qu'observateur. Enfin, nous allons ajouter une méthode notifyObservers à la classe Sudoku pour qu'elle puisse avertir chaque observateur lorsqu'une cellule est mise à jour.
+
+## Controleur
+
+## Strategie
+### Question 1
+La solution n'est pas encore évolutive car si on veut changer d'algorithme il faut coder une nouvelle classe et changer le fonctionnement dans le code, notamment le code du Controller.
