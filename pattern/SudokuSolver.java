@@ -2,7 +2,7 @@ package pattern;
 
 import antipattern.Sudoku;
 
-public class SudokuSolver {
+public class SudokuSolver implements SolverStrategy{
     public boolean solve(SudokuModel sudoku) {
         return solveCell(0, 0, sudoku);
     }
